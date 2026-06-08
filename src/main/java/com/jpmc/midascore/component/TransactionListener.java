@@ -49,9 +49,5 @@ public class TransactionListener {
         );
 
         databaseConduit.save(transactionRecord);
-
-        if (sender.getId() == 9 || recipient.getId() == 9) {
-            System.out.println("Wilbur balance is now: " + databaseConduit.findUserById(9).getBalance());
-        }
     }
 }
